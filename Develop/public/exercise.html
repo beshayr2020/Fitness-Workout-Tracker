@@ -59,3 +59,32 @@
             <label for="sets">Sets:</label>
             <input type="number" name="sets" id="sets" placeholder="4" />
           </div>
+          <div class="reps">
+            <label for="reps">Reps:</label>
+            <input type="number" name="reps" id="reps" placeholder="10" />
+          </div>
+          <div class="resistance-duration">
+            <label for="resistance-duration">Duration (minutes):</label>
+            <input type="number" name="resistance-duration" id="resistance-duration" placeholder="10" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button disabled class="huge ui blue button complete">
+            Complete
+          </button>
+          <button disabled class="huge ui positive button add-another">
+            Add Exercise
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="toast">
+  Workout Added Successfully!
+</div>
+<script src="/api.js"></script>
+<script src="/exercise.js"></script>
+</body>
+
+</html>
