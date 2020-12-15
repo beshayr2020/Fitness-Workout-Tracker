@@ -124,4 +124,32 @@ function validateInputs() {
     if (shouldNavigateAway) {
       location.href = "/";
     }
+}
+  function clearInputs() {
+    cardioNameInput.value = "";
+    nameInput.value = "";
+    setsInput.value = "";
+    distanceInput.value = "";
+    durationInput.value = "";
+    repsInput.value = "";
+    resistanceDurationInput.value = "";
+    weightInput.value = "";
   }
+  
+  if (workoutTypeSelect) {
+    workoutTypeSelect.addEventListener("change", handleWorkoutTypeChange);
+  }
+  if (completeButton) {
+    completeButton.addEventListener("click", function (event) {
+      shouldNavigateAway = true;
+      handleFormSubmit(event);
+    });
+  }
+  if (addButton) {
+    addButton.addEventListener("click", handleFormSubmit);
+  }
+  toast.addEventListener("animationend", handleToastAnimationEnd);
+  
+  document
+    .querySelectorAll("input")
+    .forEach(element => element.addEventListener("input", validateInputs));  
