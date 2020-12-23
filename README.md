@@ -1,10 +1,15 @@
 # Fitness Workout Tracker
 Fitness-Tracker
 
-See the deployed app on Heroku: 
+![Fitness Tracker](Tracker.jpg)
+
+![Workout Dashboard](Stats.jpg)
+
+
+Here is a link to the Heroku deployed webpage: [https://fitness-workout-tracker-besh.herokuapp.com/]
 
 Project Description:
-The Fitness Tracker is an app which allows the user to add exercises to a database, update workouts
+A fitness app that allows the user to view, create, and track daily workouts. The user is able to log multiple exercises in a given day and also go back and update the workout. The user is able to track the name, type, weight, sets, reps and duration of each exercise. Cardiovascular exercises show the distance traveled in miles.
 
 ## Application Features:
 
@@ -12,7 +17,7 @@ The Fitness Tracker is an app which allows the user to add exercises to a databa
 
   * Add new exercises to a new workout plan.
 
-  * Lets you see dashboard with grapgh and a chart to display
+  * Dashboard display with grapgh and a chart
 
   ## Programs
  * HTML, CSS, Javascript, 
