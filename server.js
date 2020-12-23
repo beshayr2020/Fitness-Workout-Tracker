@@ -13,8 +13,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
-app.use(require("./routes/api-routes"));
-app.use(require("./routes/html-routes"));
+
 
 //  Database
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutDB",
@@ -25,7 +24,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutDB",
         useFindAndModify: false
     }
 );
-
+app.use(require("./routes/api-routes"));
+app.use(require("./routes/html-routes"));
 // Server
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
